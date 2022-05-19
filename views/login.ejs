@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+</head>
+
+<style>
+    .container {
+        width: 100%;
+        max-width: 300px;
+        /* max-height: 400px; */
+        background-color: rgb(249, 238, 224);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: auto;
+        padding: 40px 10px;
+    }
+    
+    .container form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container form div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        background-color: rgb(61, 188, 61);
+        border: none;
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    
+    label {
+        margin-bottom: 10px;
+    }
+    
+    input {
+        padding: 5px 10px;
+        outline: none;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form action="/account-login" method="POST">
+            <div class="">
+                <label for="">Username:</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="">
+                <label for="">Password:</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
